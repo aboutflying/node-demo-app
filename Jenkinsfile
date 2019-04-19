@@ -5,11 +5,11 @@ pipeline {
         aws_secret_key = credentials('aws_secret_key')
     }
     stages {
-        stage('Initialize workspace') {
-            steps {
-                deleteDir()
-            }
-        }
+        // stage('Initialize workspace') {
+        //     steps {
+        //         deleteDir()
+        //     }
+        // }
         // stage('Git clone') {
         //     steps {
         //         git 'https://github.com/aboutflying/node-demo-app.git'
