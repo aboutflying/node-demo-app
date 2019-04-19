@@ -32,7 +32,7 @@
             "inline": [
                 "sudo apt-get update",
                 "sudo apt-get install -y nginx",
-                "sudo apt-get install /home/ubuntu/*.deb",
+                "sudo apt-get install /home/ubuntu/*.deb || true",
                 "sudo apt-get install -f"
             ]
         }
