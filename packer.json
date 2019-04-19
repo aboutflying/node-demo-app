@@ -30,6 +30,8 @@
         {
             "type": "shell",
             "inline": [
+                "cd /var/lib/apt",
+                "sudo mv lists lists.old",
                 "sudo apt-get update",
                 "sudo apt-get install -y nginx",
                 "sudo apt-get install /home/ubuntu/*.deb || true",
