@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                     deb_name=$(ls *.deb)
-                    sed -i 's/built_deb/${deb_name}/g' packer.json
+                    sed -i "s/built_deb/${deb_name}/g" packer.json
                 '''
             }
         }
