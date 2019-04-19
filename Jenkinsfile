@@ -13,11 +13,11 @@ pipeline {
                 deleteDir()
             }
         }
-        stage('Git clone') {
-            steps {
-                git 'https://github.com/aboutflying/node-demo-app.git'
-            }
-        }
+        // stage('Git clone') {
+        //     steps {
+        //         git 'https://github.com/aboutflying/node-demo-app.git'
+        //     }
+        // }
         stage('Docker container run') {
             steps {
                 sh 'sudo docker run -v "$PWD":/root builddep bash /root/install.sh'
