@@ -13,8 +13,8 @@ pipeline {
         stage('Configure packer.json') {
             steps {
                 sh '''
-                    deb_name=\$(ls *.deb)
-                    sed -i \'s/built_deb/\${deb_name}/g\' packer.json
+                    deb_name=$(ls *.deb)
+                    sed -i 's/built_deb/${deb_name}/g' packer.json
                 '''
             }
         }
