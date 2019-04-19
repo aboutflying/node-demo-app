@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        packer 'Packer 1.2.2' 
-    }
     environment {
         aws_access_key = credentials('aws_access_key')
         aws_secret_key = credentials('aws_secret_key')
