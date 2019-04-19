@@ -26,7 +26,7 @@ pipeline {
     }
     post {
         success {
-            archiveArtifacts '*.json'
+            archiveArtifacts 'manifest.json'
         }
     }
 }
