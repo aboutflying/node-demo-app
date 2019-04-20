@@ -34,7 +34,7 @@
                 "sudo mv lists lists.old",
                 "sudo apt-get update",
                 "sudo DEBIAN_FRONTEND=noninteractive apt-get install --force-yes -y /home/ubuntu/*.deb || true",
-                "sudo install -f",
+                "sudo apt-get install -f",
                 "sudo systemctl start node-demo-app"
             ]
         }
