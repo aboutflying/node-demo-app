@@ -6,7 +6,7 @@ var child;
 app.get('/', function (req, res) {
   child = exec("hostname",
   function (error, stdout, stderr) {
-     var hostname = JSON.stringify(stdout).replace(/"/g, "");
+     var hostname = JSON.stringify(stdout).replace(/"/g, "").replace(/\n/g, "");
      res.send('Hello from ' + hostname + '!');
   });
 });
