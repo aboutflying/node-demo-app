@@ -33,8 +33,9 @@
                 "cd /var/lib/apt",
                 "sudo mv lists lists.old",
                 "sudo apt-get update",
-                "sudo apt-get install /home/ubuntu/*.deb || true",
-                "sudo apt-get install -f"
+                "sudo DEBIAN_FRONTEND=noninteractive apt-get install --force-yes -y /home/ubuntu/*.deb || true",
+                "sudo install -f",
+                "sudo systemctl start node-demo-app"
             ]
         }
     ],
