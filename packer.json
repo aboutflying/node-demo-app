@@ -33,7 +33,7 @@
                 "cd /var/lib/apt",
                 "sudo mv lists lists.old",
                 "sudo apt-get update",
-                "sudo DEBIAN_FRONTEND=noninteractive apt-get install --allow-downgrades --allow-remove-essential --allow-change-held-packages -y /home/ubuntu/*.deb || true",
+                "sudo DEBIAN_FRONTEND=noninteractive apt-get install --allow-downgrades --allow-remove-essential --allow-change-held-packages -y /home/ubuntu/*.deb",
                 "sudo apt-get install -f",
                 "sudo systemctl start node-demo-app"
             ]
