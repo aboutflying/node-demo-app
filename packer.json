@@ -30,6 +30,7 @@
         {
             "type": "shell",
             "inline": [
+                "sleep 30",
                 "sudo apt-get update",
                 "sudo DEBIAN_FRONTEND=noninteractive apt-get install --allow-downgrades --allow-remove-essential --allow-change-held-packages -y nodejs /home/ubuntu/*.deb",
                 "sudo apt-get install -f",
