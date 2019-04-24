@@ -2,7 +2,7 @@ Source: node-demo-app
 Section: unknown
 Priority: optional
 Maintainer: Edward Viaene <ward@in4it.io>
-Standards-Version: 0.0.1
+Standards-Version: 1.0.1
 
 Package: node-demo-app
 Architecture: any
